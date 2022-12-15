@@ -1,4 +1,5 @@
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const fruits2 = ["pera", "manzana", "banana", "sandia"];
 
 const arrayMethods = [
     {   
@@ -92,6 +93,28 @@ const arrayMethods = [
         },
         warning: 'Las posiciones de el array mediante el operador de javascript delete. Usando delete quedaran undefined los agujeros de la matriz, dejando como resultado esto [, apple, kiwi], utiliza pop() o shift() en su lugar',
     },
+    {
+        id: 10,
+        name: 'concat()',
+        func: 'concatenar',
+        desc: 
+        {
+            carac1: 'crea un NUEVO array concatenando matrices existentes',
+            carac2: 'puede concatenar varias matrices a la vez como argumento',
+        },
+        sintx: 'const todasLasFrutas = fruit.concat(fruit2) // [frutas, frutas, frutas]'
+    },
+    {
+        id: 1,
+        name: 'splice()',
+        func: 'agregar',
+        desc: 
+        {
+            carac1: '',
+            carac2: '',
+        },
+        sintx: ''
+    },
 ]
 
 
@@ -103,4 +126,5 @@ console.log(fruits.shift());
 console.log(fruits.unshift()); 
 console.log(fruits.length)
 delete fruits[0];
-console.log(fruits)
+const todasLasFrutas = fruits.concat(fruits2)
+console.log(todasLasFrutas)
