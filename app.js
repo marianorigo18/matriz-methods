@@ -3,32 +3,39 @@ const fruits2 = ["pera", "manzana", "banana", "sandia"];
 
 const arrayMethods = [
     {   
-        id: 1,
-        name: 'toString()',
-        func: 'convertir',
-        desc: {
+        a_id: 1,
+        b_name: 'toString()',
+        c_func: 'convertir',
+        d_desc: {
             carac1: 'convierte el array en una cadena de texto',
             carac2: 'lo separa por coma',
-        }
+        },
+        e_array: 'const fruits = ["Banana", "Orange", "Apple", "Mango"];',
+        f_sintx: 'console.log(fruits.toString());',
+        g_resp: 'Banana,Orange,ApplemMango'
     },
     {
-        id: 2,
-        name: 'join()',
-        func: 'convertir',
-        desc: {
+        a_id: 2,
+        b_name: 'join()',
+        c_func: 'convertir',
+        d_desc: {
             carac1: 'convierte un array en cadena de texto',
             carac2: 'lo separa por lo que le especifiquemos',
-        }
+        },
+        e_array: 'const fruits = ["Banana", "Orange", "Apple", "Mango"];',
+        f_sintx: 'console.log(fruits.join("/*"));',
+        g_resp: 'Banana/*Orange/*Applem/*Mango' 
     },
     {
-        id: 3,
-        name: 'pop()',
-        func: 'eliminar',
-        desc: 
+        a_id: 3,
+        b_name: 'pop()',
+        c_func: 'eliminar',
+        d_desc: 
         {
             carac1: 'Elimina la ultima posicion del array',
             carac2: 'retorna el ELEMENTO eliminado ej: mango'
-        }
+        },
+        e_array: 'const fruits = ["Banana", "Orange", "Apple", "Mango"];',
     },
     {
         id: 4,
@@ -107,23 +114,37 @@ const arrayMethods = [
     {
         id: 1,
         name: 'splice()',
-        func: 'agregar',
+        func: 'agregar eliminar',
         desc: 
         {
-            carac1: '',
-            carac2: '',
+            carac1: 'tiene un primer parametro que le especificamos de que posicion en adelante queremos agregar nuevos elementos a una matriz',
+            carac2: 'recibe un 2do parametro que le especificamos cuantas posiciones debe aliminar',
+            carac3: 'devuelve una matriz con los elementos eliminados',
+            carac4: 'elimina elementos de la matriz sin deja posiciones vacias',
+            carac4: 'si queremos solamente eliminar devemos especificar la posicion y luego la cantidad de posiciones',
         },
-        sintx: ''
+        sintx: 'const fruits = ["Banana", "Orange", "Apple", "Mango"]; fruits.splice(2, 2, "Lemon", "Kiwi");'
+    },
+    {
+        id: 1,
+        name: 'slice()',
+        func: 'cortar',
+        desc: 
+        {
+            carac1: 'este metodo corta el array en la posicion que le especcifiquemos',
+            carac2: 'devuelve un nuevo array con lo que queda de posiciones',
+        },
+        array: 'const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];',
+        sintx: 'const citrus = fruits.slice(1);',
+        resp: 'Orange,Lemon,Apple,Mango'
     },
 ]
 
-
-console.log(fruits.toString()); 
-console.log(fruits.join("/*")); 
+console.log(arrayMethods);
 console.log(fruits.pop()); 
 console.log(fruits.push("kiwi")); 
 console.log(fruits.shift()); 
-console.log(fruits.unshift()); 
+console.log(fruits.unshift("lemon")); 
 console.log(fruits.length)
 delete fruits[0];
 const todasLasFrutas = fruits.concat(fruits2)
