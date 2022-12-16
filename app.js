@@ -1,6 +1,4 @@
 const fruits = ["lemon", "Banana", "Orange", "Apple", "Mango"];
-console.log(fruits.sort())
-
 const arrayMethods = [
     {   
         a_id: 1,
@@ -167,5 +165,3 @@ const arrayMethods = [
         g_resp: '["Apple", "Banana", "Mango", "Orange", "Lemon"];',
     },
 ]
-
-console.log(arrayMethods);
